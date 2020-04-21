@@ -68,7 +68,7 @@ namespace Index {
 		if (!element) {
 			return;
 		}
-		element.style.borderColor = "#e06060";
+		element.style.borderColor = "#b06060";
 		element.style.backgroundColor = "#ffe0e0";
 	}
 
