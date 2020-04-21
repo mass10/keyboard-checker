@@ -59,9 +59,10 @@ namespace Index {
 	}
 
 	function onKeyDown(e: KeyboardEvent) {
+		console.log("[TRACE] <onKeyDown()>", e);
 		const keycode = convertKey(e);
 		if (keycode === "") {
-			console.log("[ERROR] キーを判別できません。", e);
+			console.log("[ERROR] Unknown key.");
 			return;
 		}
 		const element = document.getElementById(keycode);
@@ -75,7 +76,7 @@ namespace Index {
 	function onKeyUp(e: KeyboardEvent) {
 		const keycode = convertKey(e);
 		if (keycode === "") {
-			console.log("[ERROR] キーを判別できません。", e);
+			console.log("[ERROR] Unknown key.");
 			return;
 		}
 		const element = document.getElementById(keycode);
