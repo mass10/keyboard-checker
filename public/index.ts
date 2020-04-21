@@ -69,6 +69,7 @@ namespace Index {
 			return;
 		}
 		element.style.borderColor = "#e06060";
+		element.style.backgroundColor = "#ffe0e0";
 	}
 
 	function onKeyUp(e: KeyboardEvent) {
@@ -82,6 +83,7 @@ namespace Index {
 			return;
 		}
 		element.style.borderColor = "#b0b0b0";
+		element.style.backgroundColor = "";
 	}
 
 	export function main(): void {
