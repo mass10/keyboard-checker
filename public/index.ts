@@ -59,12 +59,12 @@ namespace Index {
 	}
 
 	function onKeyDown(e: KeyboardEvent) {
-		console.log("[TRACE] <onKeyDown()>", e);
 		const keycode = convertKey(e);
 		if (keycode === "") {
-			console.log("[ERROR] Unknown key.");
+			console.log("[ERROR] <onKeyDown()> Unknown key.", e);
 			return;
 		}
+		console.log(`[TRACE] <onKeyDown()> [${e.code}] >> [${keycode}]`);
 		const element = document.getElementById(keycode);
 		if (!element) {
 			return;
